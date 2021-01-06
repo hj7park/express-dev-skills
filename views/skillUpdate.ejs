@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>skills</h1>
+    <p>Welcome to skills</p>
+    <form action="/skills/<%=skill.id%>/updateFormHandle" method="post">
+      <p><label for="name">Enter Skill name: </label>
+      <input id="name" type="text" name="name" value="<%= skill.name%>"></p>
+      <p><label for="level">Enter level: </label>
+      <input id="level" type="text" name="level" value="<%= skill.level%>"></p>
+      <input type="submit" value="OK">
+      
+    </form>
+  </body>
+</html>
